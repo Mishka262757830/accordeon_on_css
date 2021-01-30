@@ -3,8 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <title>Accordeon</title>
+    <link rel="stylesheet" href="accoredeon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/73dd680229.js"></script>
 </head>
 <body>
+
+<div class="container">
+    <div class="product_cards">
+        <div class="accordeon">
+            <div class="accordeon_item">
+                <input class="accordeon_input" type="checkbox" id="accordeon_1">
+                <label class="accordeon_title" for="accordeon_1">Category</label>
+                <div class="accordeon_text">
+                    <a class="accordeon_link" href="#">Accessories</a>
+                    <a class="accordeon_link" href="#">Bags</a>
+                    <a class="accordeon_link" href="#">Denim</a>
+                    <a class="accordeon_link" href="#">Hoodies & Sweatshirts</a>
+                    <a class="accordeon_link" href="#">Jackets & Coats</a>
+                    <a class="accordeon_link" href="#">Pants</a>
+                    <a class="accordeon_link" href="#">Polos</a>
+                    <a class="accordeon_link" href="#">Shirts</a>
+                    <a class="accordeon_link" href="#">Shoes</a>
+                    <a class="accordeon_link" href="#">Shorts</a>
+                    <a class="accordeon_link" href="#">Sweaters & Knits</a>
+                    <a class="accordeon_link" href="#">T-Shirts</a>
+                    <a class="accordeon_link" href="#">Tanks</a>
+                </div>
+            </div>
+
+            <div class="accordeon_item">
+                <input class="accordeon_input" type="checkbox" id="accordeon_2">
+                <label class="accordeon_title" for="accordeon_2">Brand</label>
+                <div class="accordeon_text">
+                    <a class="accordeon_link" href="#">Accessories</a>
+                    <a class="accordeon_link" href="#">Bags</a>
+                    <a class="accordeon_link" href="#">Denim</a>
+                    <a class="accordeon_link" href="#">Hoodies & Sweatshirts</a>
+                    <a class="accordeon_link" href="#">Jackets & Coats</a>
+                    <a class="accordeon_link" href="#">Pants</a>
+                    <a class="accordeon_link" href="#">Polos</a>
+                    <a class="accordeon_link" href="#">Shirts</a>
+                    <a class="accordeon_link" href="#">Shoes</a>
+                    <a class="accordeon_link" href="#">Shorts</a>
+                    <a class="accordeon_link" href="#">Sweaters & Knits</a>
+                    <a class="accordeon_link" href="#">T-Shirts</a>
+                    <a class="accordeon_link" href="#">Tanks</a>
+                </div>
+            </div>
+
+            <div class="accordeon_item">
+                <input class="accordeon_input" type="checkbox" id="accordeon_3">
+                <label class="accordeon_title" for="accordeon_3">Designer</label>
+                <div class="accordeon_text">
+                    <a class="accordeon_link" href="#">Accessories</a>
+                    <a class="accordeon_link" href="#">Bags</a>
+                    <a class="accordeon_link" href="#">Denim</a>
+                    <a class="accordeon_link" href="#">Hoodies & Sweatshirts</a>
+                    <a class="accordeon_link" href="#">Jackets & Coats</a>
+                    <a class="accordeon_link" href="#">Pants</a>
+                    <a class="accordeon_link" href="#">Polos</a>
+                    <a class="accordeon_link" href="#">Shirts</a>
+                    <a class="accordeon_link" href="#">Shoes</a>
+                    <a class="accordeon_link" href="#">Shorts</a>
+                    <a class="accordeon_link" href="#">Sweaters & Knits</a>
+                    <a class="accordeon_link" href="#">T-Shirts</a>
+                    <a class="accordeon_link" href="#">Tanks</a>
+                </div>
+            </div>
+        </div>
+        <div class="filter_wraper">
+            <div class="trending_now">
+                <div class="trending_title">Trending now</div>
+                <div class="trending_chose">
+                    <button class="trending_btn">Bohemian</button>
+                    <button class="trending_btn">Floral</button>
+                    <button class="trending_btn">Lace</button>
+                    <button class="trending_btn">Floral</button>
+                    <button class="trending_btn">Lace</button>
+                    <button class="trending_btn">Bohemian</button>
+                </div>
+            </div>
+
+            <div class="size">
+                <div class="size_title">Size</div>
+                <div class="size_chose">
+                    <div class="size_wrapper">
+                        <label>
+                            <input class="size_check" type="checkbox"> XXS
+                        </label>
+                        <label>
+                            <input class="size_check" type="checkbox"> L
+                        </label>
+                    </div>
+                    <div class="size_wrapper">
+                        <label>
+                            <input class="size_check" type="checkbox"> XS
+                        </label>
+                        <label>
+                            <input class="size_check" type="checkbox"> XL
+                        </label>
+                    </div>
+                    <div class="size_wrapper">
+                        <label>
+                            <input class="size_check" type="checkbox"> S
+                        </label>
+                        <label>
+                            <input class="size_check" type="checkbox"> XXL
+                        </label>
+                    </div>
+                    <div class="size_wrapper">
+                        <label>
+                            <input class="size_check" type="checkbox"> M
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price">
+                <div class="price_title">Price</div>
+                <div class="price_line"><div class="price_line_inner"></div></div>
+                <div class="price_range">
+                    <div class="price_min">$52</div>
+                    <div class="price_max">$400</div>
+                </div>
+            </div>
+
+            <div class="filter">
+                <button class="filter_btn"> Sort By</button><select class="filter_option" name="Sort By" id="name">
+                <option value="name">Name </option>
+                <option value="name">Size </option>
+                <option value="name">Price </option>
+            </select>
+
+                <button class="filter_btn"> Show</button><select class="filter_option" name="Show" id="ammount">
+                <option value="ammount">01</option>
+                <option value="ammount">02</option>
+                <option value="ammount">03</option>
+                <option value="ammount">04</option>
+                <option value="ammount">05</option>
+                <option value="ammount">06</option>
+                <option value="ammount">07</option>
+                <option value="ammount">08</option>
+                <option value="ammount">09</option>
+            </select>
+            </div>
+            <div class="shop_card_wrapper">
+                <div class="shop_card"><a href="#"><img class="card_img" src="images/shop_card/1.jpg" alt="1">
+                    <span class="card_text">Add To Cart&nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                    <span class="card_name">Mango People T-shirt</span>
+                    <span class="card_price">$52.00</span>
+                </div>
+                <div class="shop_card"><a href="#"><img src="images/shop_card/2.jpg" alt="2">
+                    <span class="card_text">Add To Cart&nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                    <span class="card_name">Mango People T-shirt</span>
+                    <span class="card_price">$52.00</span>
+                </div>
+                <div class="shop_card"><a href="#"><img src="images/shop_card/3.jpg" alt="3">
+                    <span class="card_text">Add To Cart&nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                    <span class="card_name">Mango People T-shirt</span>
+                    <span class="card_price">$52.00</span>
+                </div>
+                <div class="shop_card"><a href="#"><img src="images/shop_card/4.jpg" alt="4">
+                    <span class="card_text">Add To Cart&nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                    <span class="card_name">Mango People T-shirt</span>
+                    <span class="card_price">$52.00</span>
+                </div>
+                <div class="shop_card"><a href="#"><img src="images/shop_card/5.jpg" alt="5">
+                    <span class="card_text">Add To Cart&nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                    <span class="card_name">Mango People T-shirt</span>
+                    <span class="card_price">$52.00</span>
+                </div>
+                <div class="shop_card"><a href="#"><img src="images/shop_card/6.jpg" alt="6">
+                    <span class="card_text">Add To Cart&nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                    <span class="card_name">Mango People T-shirt</span>
+                    <span class="card_price">$52.00</span>
+                </div>
+                <div class="shop_card"><a href="#"><img src="images/shop_card/7.jpg" alt="7">
+                    <span class="card_text">Add To Cart&nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                    <span class="card_name">Mango People T-shirt</span>
+                    <span class="card_price">$52.00</span>
+                </div>
+                <div class="shop_card"><a href="#"><img src="images/shop_card/8.jpg" alt="8">
+                    <span class="card_text">Add To Cart&nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                    <span class="card_name">Mango People T-shirt</span>
+                    <span class="card_price">$52.00</span>
+                </div>
+                <div class="shop_card"><a href="#"><img src="images/shop_card/9.jpg" alt="9">
+                    <span class="card_text">Add To Cart&nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                    <span class="card_name">Mango People T-shirt</span>
+                    <span class="card_price">$52.00</span>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">...</a>
+                <a href="#">20  </a>
+                <a href="#">&raquo;</a>
+            </div>
+
+            <button class="card_btn">View All</button>
+
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>
